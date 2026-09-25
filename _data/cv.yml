@@ -1,0 +1,296 @@
+# =============================================================================
+#  SINGLE SOURCE OF TRUTH for everything except publications.
+#  Publications live in _bibliography/papers.bib.
+#
+#  Read by:
+#    - the website pages (_pages/*.md)            -> via site.data.cv
+#    - the PDF CV (cv/cv.typ)                     -> via bin/build.py
+#    - the GitHub profile README (bin/readme.md.j2) -> via bin/build.py
+#
+#  Dates: use YYYY, YYYY-MM or YYYY-MM-DD. Leave `end` empty for "present".
+#  Optional on any entry:  hide_in: [cv, web, readme]  to keep it out of one output.
+# =============================================================================
+
+profile:
+  name: Yahya Saleh
+  display_name: Yahya (Yaḥyā) Saleh
+  title: Dr. rer. nat.
+  email: yahya.saleh@mathmods.eu
+  website: https://saleh0694.github.io
+  github: Saleh0694
+  scholar_id: YByOtxIAAAAJ
+  linkedin: yahyasaleh
+  x: yahya_saleh94
+  # Short bio in Markdown. Used on the home page and in the GitHub README.
+  bio: |
+    Hey, I'm Yahya, an applied mathematician and research engineer. I have
+    experience in building and analyzing machine learning models for scientific
+    computing and engineering problems. 
+    
+    I am genuinely passionate about pushing the boundaries of what is machine
+    computable. I developed a new spectral-learning framework
+    for solving Schrödinger equations that describe vibrations of molecules and
+    built software that eases the adoption of this framework in practical
+    applications (not that the framework is widely adopted but getting there :v).
+    
+    In more industrial applications, I've built test automation and data-fixture
+    tooling for banking systems, prototyped AI-agent integrations with the Model
+    Context Protocol (MCP), and worked on cloud deployment of machine learning models.
+  interests:
+    - Approximation theory
+    - Scientific machine learning
+    - Statistical learning theory
+    - Computational quantum molecular physics
+
+positions:
+  - start: 2025-04
+    end:
+    title: Consultant
+    org: d-fine GmbH
+  - start: 2023-04
+    end: 2025-03
+    title: Postdoctoral Researcher
+    org: Universität Hamburg
+    unit: Department of Mathematics
+  - start: 2020-04
+    end: 2023-03
+    title: Doctoral Researcher
+    org: Universität Hamburg and Center for Free-Electron Laser Science (CFEL), DESY
+    unit: Department of Mathematics
+  - start: 2018-05
+    end: 2018-09
+    title: Research Assistant
+    org: Center for Free-Electron Laser Science (CFEL), DESY
+
+education:
+  - start: 2020-04
+    end: 2023-05
+    degree: Dr. rer. nat. in Mathematics
+    note: magna cum laude
+    institution: Universität Hamburg
+    extra: "Graduate school: Data Science in Hamburg – Helmholtz Graduate School for the Structure of Matter (DASHH)"
+    thesis: Spectral and active learning for enhanced and computationally scalable quantum molecular dynamics
+    thesis_url: https://ediss.sub.uni-hamburg.de/handle/ediss/10390
+    supervisors: Prof. Dr. Armin Iske, Prof. Dr. Jochen Küpper, Dr. Andrey Yachmenev
+  - start: 2017
+    end: 2019-10
+    degree: M.Sc. in Mathematical Modelling in Engineering (MathMods), joint Erasmus Mundus degree
+    institution: Università degli Studi dell'Aquila, Universität Hamburg, Universitat Autònoma de Barcelona
+    thesis: On non-adiabatic dynamics of deflected molecular beams
+    supervisors: Prof. Dr. Jochen Küpper, Prof. Dr. Leonardo Guidoni
+  - start: 2012
+    end: 2017-09
+    degree: B.Eng. in Electrical Engineering (Electronics and Telecommunications)
+    institution: Damascus University
+    thesis: Designing a cellular-based tracking system using machine learning and Kalman filtering
+    supervisors: Prof. Dr. Hiyam Khaddam
+
+teaching:
+  institution: Universität Hamburg, Department of Mathematics
+  courses:
+    - term: Winter 2024/25
+      date: 2024-10
+      course: Software Practicum
+      level: M.Sc.
+      role: Lecturer
+      details: lectures and exercise sessions, in German
+    - term: Summer 2024
+      date: 2024-04
+      course: Mathematical Machine Learning
+      level: M.Sc.
+      role: Lecturer
+      details: lectures and exercise sessions, in English
+    - term: Winter 2023/24
+      date: 2023-10
+      course: Higher Analysis
+      level: B.Sc.
+      role: Teaching assistant to Prof. Dr. Armin Iske
+      details: exercise sessions, in German
+    - term: Summer 2023
+      date: 2023-04
+      course: Numerical Methods for Partial Differential Equations
+      level: M.Sc.
+      role: Teaching assistant to Prof. Dr. Hendrik Ranocha
+      details: exercise sessions, in English
+
+students:
+  - years: 2024–2025
+    name: Sharlet Shaji
+    level: Master's student
+    institution: Universität Hamburg, Department of Mathematics
+    topic: Spectral learning for solving the time-dependent Schrödinger equation
+    cosupervisors: Prof. Dr. Armin Iske
+  - years: 2021–2022
+    name: Jannik Eggers
+    level: Master's student
+    institution: Universität Hamburg, Department of Mathematics
+    topic: Solution of the vibrational Schrödinger equation using neural networks
+    cosupervisors: Dr. Jens-Peter M. Zemke and Prof. Dr. Jochen Küpper
+
+stays:
+  - start: 2024-08
+    end: 2024-09
+    text: >-
+      Research stay with Prof. Dr. Martin Frank, Karlsruhe Institute of Technology (KIT),
+      funded by a research-stay grant of the Helmholtz Information and Data Science Academy (HIDA)
+
+# -----------------------------------------------------------------------------
+# Talks. type: invited | contributed | poster | seminar
+# (seminar = local research seminars; shown on the website, not in the PDF CV)
+# -----------------------------------------------------------------------------
+talks:
+  - date: "2026"
+    type: invited
+    title: Learning, sharing, and using optimized vibrational coordinates
+    event: ExoMol 2026
+    place: University College London, United Kingdom
+  - date: "2026"
+    type: contributed
+    title: Learning bases via normalizing flows, applications to solving molecular Schrödinger equations and image compression
+    event: International Conference on Scientific Computing and Machine Learning
+    place: Bath, United Kingdom
+  - date: "2025-09"
+    type: invited
+    title: "Normalizing flows: from learning probability distributions to basis-set discovery"
+    event: Linköping University
+    place: Sweden
+  - date: "2025-02"
+    type: contributed
+    title: Learning basis sets using unitary and bounded bijective operators
+    event: International Conference in Numerical Mathematics and Scientific Computing
+    place: Uppsala University, Sweden
+  - date: "2025-01"
+    type: poster
+    title: Bounds on the generalization error in active learning
+    event: 6th Northern Lights Deep Learning Conference (NLDL)
+    place: Tromsø, Norway
+  - date: "2024"
+    type: poster
+    title: Computing excited states of molecules using normalizing flows
+    event: High-Dimensional Quantum Dynamics Conference
+    place: Hamburg, Germany
+  - date: "2024"
+    type: contributed
+    title: Spectral learning for solving molecular Schrödinger equations
+    event: "PINN-PAD: Physics-Informed Neural Networks in Padova"
+    event_url: https://pinn-pad.dicea.unipd.it/
+    place: Padova, Italy
+  - date: "2024"
+    type: contributed
+    title: Augmenting spectral methods with invertible neural networks and application to quantum molecular physics
+    event: ALGORITMY 2024
+    event_url: https://www.math.sk/alg2024/
+    place: Podbanské, Slovakia
+  - date: "2024"
+    type: invited
+    title: Learning basis sets in L² and application to computing excited states of molecules
+    event: BIRS Workshop on Modern Methods for Differential Equations of Quantum Mechanics
+    event_url: https://www.birs.ca/events/2024/5-day-workshops/24w5227
+    place: Banff, Canada
+  - date: "2023"
+    type: invited
+    title: Flow-induced bases and application to quantum molecular physics
+    event: Machine Learning in Engineering
+    place: TU Hamburg, Germany
+    video: https://webcast.tu-harburg.de/Mediasite/Play/d045a3f4dede4681bc5ad60a8464501b1d
+  - date: "2023"
+    type: invited
+    title: Augmenting bases with normalizing flows for solving Schrödinger equations
+    event: DPG SAMOP Spring Meeting
+    place: Germany
+  - date: "2022"
+    type: contributed
+    title: Spectral learning for solving the Schrödinger equation for molecules
+    event: Computational Methods in Applied Mathematics (CMAM)
+    place: TU Wien, Austria
+  - date: "2022"
+    type: contributed
+    title: Deep spectral methods for solving variational problems arising from differential equations
+    event: GAMM Annual Meeting
+    place: RWTH Aachen, Germany
+  - date: "2022"
+    type: contributed
+    title: Deep spectral methods for solving variational problems arising from differential equations
+    event: "HCM Workshop: Synergies Between Data Science and PDE Analysis"
+    place: Universität Bonn, Germany
+  - date: "2022"
+    type: poster
+    title: Deep learning for computing spectra of molecules
+    event: Opening Symposium, Center for Data and Computing in Natural Sciences (CDCS)
+    place: Hamburg, Germany
+  - date: "2022"
+    type: contributed
+    title: Spectral learning for (ro-)vibrational calculations of weakly bound molecules
+    event: DPG SAMOP Spring Meeting
+    place: Germany
+  - date: "2022"
+    type: poster
+    title: Deep learning for computing rovibrational spectra of molecules
+    event: European CFEL and DESY Photon Science Users' Meeting
+    place: Hamburg, Germany
+  - date: "2021"
+    type: poster
+    title: Applications of machine learning in quantum simulations of hydrogen bond dynamics
+    event: Warsaw Summer School for Quantum Physics and Chemistry
+    place: University of Warsaw, Poland
+  - date: "2021"
+    type: invited
+    title: Applications of machine learning in quantum simulations of hydrogen bond dynamics
+    event: Machine Learning for Quantum X
+    event_url: http://mlqx.quantumexcellence.org/
+    place: online
+  - date: "2021"
+    type: contributed
+    title: Active learning for computing potential-energy surfaces of molecules
+    event: Bunsentagung
+    place: online
+  - date: "2021"
+    type: seminar
+    title: Spectral learning for solving infinite-dimensional eigenvalue problems
+    event: Research seminar on Mathematical Data Analysis
+    event_url: https://www.math.uni-hamburg.de/home/brandt/researchseminar.html.en
+    place: Universität Hamburg
+  - date: "2021"
+    type: seminar
+    title: Active learning for building potential-energy surfaces of molecular systems
+    event: Scientific Computing for Molecular Physics seminar
+    place: Universität Hamburg
+  - date: "2020"
+    type: seminar
+    title: "Active learning: theory and applications"
+    event: Research seminar on Mathematical Data Analysis
+    event_url: https://www.math.uni-hamburg.de/home/brandt/researchseminar.html.en
+    place: Universität Hamburg
+
+# Schools, hackathons and workshops attended without a talk
+events:
+  - date: "2022"
+    name: "Hausdorff School: Foundational Methods in Machine Learning"
+    place: Universität Bonn, Germany
+  - date: "2021"
+    name: Helmholtz H3 Hackathon
+
+# Highlighted software (README + website home page)
+software:
+  - name: Active-Learning-of-PES
+    repo: CFEL-CMI/Active-Learning-of-PES
+    description: Active learning of potential-energy surfaces with regression-tree ensembles
+  - name: FlowBasis
+    repo: CFEL-CMI/FlowBasis
+    description: Spectral learning — basis sets augmented by normalizing flows for solving differential equations
+  - name: vibrojet
+    repo: robochimps/vibrojet
+    description: Molecular rovibrational kinetic and potential-energy operators via Taylor-mode automatic differentiation
+
+languages:
+  - Arabic (native)
+  - English (C2)
+  - German (C2)
+  - Italian (C1)
+  - French (B2)
+
+skills:
+  - label: Programming
+    details: Python (JAX, NumPy, SciPy), Julia, C++, MATLAB, Java, Bash
+  - label: Tools
+    details: Git, GitHub/GitLab, CI/CD (Jenkins), Docker, Kubernetes

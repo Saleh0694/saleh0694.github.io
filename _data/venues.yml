@@ -1,0 +1,22 @@
+# Colour/link for the small venue badge (the `abbr` field in papers.bib).
+"JCP":
+  url: https://pubs.aip.org/aip/jcp
+  color: "#14326e"
+"JCTC":
+  url: https://pubs.acs.org/journal/jctcce
+  color: "#2f6fbd"
+"CAOT":
+  url: https://link.springer.com/journal/11785
+  color: "#5a3e8c"
+"NLDL":
+  url: https://proceedings.mlr.press/v265/
+  color: "#1f7a6d"
+"PAMM":
+  url: https://onlinelibrary.wiley.com/journal/16177061
+  color: "#6b6b6b"
+"DEEPK":
+  color: "#6b6b6b"
+"arXiv":
+  color: "#b31b1b"
+"PhD":
+  color: "#444444"

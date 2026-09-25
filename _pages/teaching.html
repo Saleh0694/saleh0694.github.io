@@ -1,0 +1,33 @@
+---
+layout: page
+permalink: /teaching/
+title: teaching
+description: Courses and supervised students. Generated from _data/cv.yml.
+nav: true
+nav_order: 3
+---
+
+{% assign t = site.data.cv.teaching %}
+
+<h2 id="courses">Courses</h2>
+
+<p class="text-muted">{{ t.institution }}</p>
+<table class="table table-sm table-borderless">
+{% for c in t.courses %}
+  <tr>
+    <th scope="row" style="width: 9em; font-weight: normal; color: var(--global-text-color-light)">{{ c.term }}</th>
+    <td><em>{{ c.course }}</em> ({{ c.level }})<br>{{ c.role }}, {{ c.details }}</td>
+  </tr>
+{% endfor %}
+</table>
+
+<h2 id="students-mentored">Students mentored</h2>
+
+<table class="table table-sm table-borderless">
+{% for s in site.data.cv.students %}
+  <tr>
+    <th scope="row" style="width: 9em; font-weight: normal; color: var(--global-text-color-light)">{{ s.years }}</th>
+    <td><b>{{ s.name }}</b>, {{ s.level }}, {{ s.institution }}<br><em>{{ s.topic }}</em>{% if s.cosupervisors %}<br>co-supervised with {{ s.cosupervisors }}{% endif %}</td>
+  </tr>
+{% endfor %}
+</table>
