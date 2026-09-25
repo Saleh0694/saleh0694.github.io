@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://saleh0694.github.io/sitemap.xml
