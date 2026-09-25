@@ -1,0 +1,68 @@
+---
+layout: page
+permalink: /cv/
+title: cv
+description: <a href="/assets/pdf/cv.pdf"><i class="fa-solid fa-file-pdf"></i> Download the PDF version</a> — generated from the same data as this page.
+nav: true
+nav_order: 4
+---
+
+{% assign cv = site.data.cv %}
+
+<h2 id="employment">Employment</h2>
+
+<table class="table table-sm table-borderless">
+{% for x in cv.positions %}
+  {% capture from %}{{ x.start | slice: 0, 4 }}{% endcapture %}
+  {% if x.end %}{% capture to %}{{ x.end | slice: 0, 4 }}{% endcapture %}{% else %}{% assign to = "present" %}{% endif %}
+  <tr>
+    <th scope="row" style="width: 9em; font-weight: normal; color: var(--global-text-color-light)">{{ from }}{% if to != from %} – {{ to }}{% endif %}</th>
+    <td><b>{{ x.title }}</b>, {% if x.unit %}{{ x.unit }}, {% endif %}{{ x.org }}</td>
+  </tr>
+{% endfor %}
+</table>
+
+<h2 id="education">Education</h2>
+
+<table class="table table-sm table-borderless">
+{% for x in cv.education %}
+  <tr>
+    <th scope="row" style="width: 9em; font-weight: normal; color: var(--global-text-color-light)">{{ x.start | slice: 0, 4 }} – {{ x.end | slice: 0, 4 }}</th>
+    <td>
+      <b>{{ x.degree }}</b>{% if x.note %} (<em>{{ x.note }}</em>){% endif %}, {{ x.institution }}<br>
+      Thesis: {% if x.thesis_url %}<a href="{{ x.thesis_url }}"><em>{{ x.thesis }}</em></a>{% else %}<em>{{ x.thesis }}</em>{% endif %}<br>
+      Supervisors: {{ x.supervisors }}
+    </td>
+  </tr>
+{% endfor %}
+</table>
+
+<h2 id="research-stays-and-grants">Research stays and grants</h2>
+
+<table class="table table-sm table-borderless">
+{% for x in cv.stays %}
+  <tr>
+    <th scope="row" style="width: 9em; font-weight: normal; color: var(--global-text-color-light)">{{ x.start | slice: 0, 4 }}</th>
+    <td>{{ x.text }}</td>
+  </tr>
+{% endfor %}
+</table>
+
+<h2 id="publications-talks-and-teaching">Publications, talks and teaching</h2>
+
+<p>See <a href="{{ '/publications/' | relative_url }}">publications</a>, <a href="{{ '/talks/' | relative_url }}">talks</a> and <a href="{{ '/teaching/' | relative_url }}">teaching</a>.</p>
+
+<h2 id="languages-and-skills">Languages and skills</h2>
+
+<table class="table table-sm table-borderless">
+  <tr>
+    <th scope="row" style="width: 9em; font-weight: normal; color: var(--global-text-color-light)">Languages</th>
+    <td>{{ cv.languages | join: " · " }}</td>
+  </tr>
+{% for s in cv.skills %}
+  <tr>
+    <th scope="row" style="width: 9em; font-weight: normal; color: var(--global-text-color-light)">{{ s.label }}</th>
+    <td>{{ s.details }}</td>
+  </tr>
+{% endfor %}
+</table>

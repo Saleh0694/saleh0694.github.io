@@ -1,0 +1,43 @@
+---
+layout: page
+permalink: /talks/
+title: talks
+description: Talks, posters and events, newest first. Generated from _data/cv.yml.
+nav: true
+nav_order: 2
+---
+
+{% assign talks = site.data.cv.talks | sort: "date" | reverse %}
+{% assign groups = "invited|Invited talks,contributed|Contributed talks,poster|Posters,seminar|Seminar talks" | split: "," %}
+
+{% for g in groups %}
+{% assign kv = g | split: "|" %}
+{% assign items = talks | where: "type", kv[0] %}
+{% if items.size > 0 %}
+
+<h2 id="{{ kv[0] }}">{{ kv[1] }} <small class="text-muted">({{ items.size }})</small></h2>
+<table class="table table-sm table-borderless">
+{% for t in items %}
+  <tr>
+    <th scope="row" style="width: 4.5em; font-weight: normal; color: var(--global-text-color-light)">{{ t.date | slice: 0, 4 }}</th>
+    <td>
+      {% if t.video %}<a href="{{ t.video }}"><em>{{ t.title }}</em></a> <i class="fa-solid fa-video" title="recording"></i>{% else %}<em>{{ t.title }}</em>{% endif %}<br>
+      {% if t.event_url %}<a href="{{ t.event_url }}">{{ t.event }}</a>{% else %}{{ t.event }}{% endif %}, {{ t.place }}
+    </td>
+  </tr>
+{% endfor %}
+</table>
+{% endif %}
+{% endfor %}
+
+{% if site.data.cv.events.size > 0 %}
+<h2 id="events">Schools and hackathons</h2>
+<table class="table table-sm table-borderless">
+{% for e in site.data.cv.events %}
+  <tr>
+    <th scope="row" style="width: 4.5em; font-weight: normal; color: var(--global-text-color-light)">{{ e.date | slice: 0, 4 }}</th>
+    <td>{{ e.name }}{% if e.place %}, {{ e.place }}{% endif %}</td>
+  </tr>
+{% endfor %}
+</table>
+{% endif %}

@@ -1,0 +1,189 @@
+---
+---
+% =============================================================================
+%  SINGLE SOURCE OF TRUTH for publications.
+%  Used by the website (jekyll-scholar), the PDF CV and the GitHub README.
+%
+%  Custom fields (all optional):
+%    selected   = {true}                 key paper: starred in the CV, shown on home page + README
+%    cvsection  = {peer-reviewed | preprint | thesis}
+%                                        which CV section it goes in (thesis = not listed in CV,
+%                                        because the thesis is already under Education)
+%    abbr       = {JCP}                  small badge on the website
+%    arxiv      = {2406.18613}           adds an arXiv button
+%    code       = {https://github.com/...}  adds a Code button
+%    html       = {https://...}          adds an HTML button (used when there is no DOI)
+%    bibtex_show= {true}                 adds a "Bib" button
+%  Keep entries in any order — every output sorts by year itself.
+% =============================================================================
+
+@article{vogt2026adaptive,
+  title     = {Adaptive Vibrational Coordinates via Symmetry-Aware Normalizing Flows},
+  author    = {Vogt, Emil and Corral, {\'A}lvaro Fern{\'a}ndez and Saleh, Yahya},
+  journal   = {Journal of Chemical Theory and Computation},
+  volume    = {22},
+  number    = {12},
+  pages     = {6137},
+  year      = {2026},
+  doi       = {10.1021/acs.jctc.6c00224},
+  abbr      = {JCTC},
+  cvsection = {peer-reviewed},
+  bibtex_show = {true}
+}
+
+@article{saleh2026riesz,
+  title     = {Inducing Riesz Bases in {$L^2$} via Composition Operators},
+  author    = {Saleh, Yahya and Iske, Armin},
+  journal   = {Complex Analysis and Operator Theory},
+  volume    = {20},
+  pages     = {21},
+  year      = {2026},
+  doi       = {10.1007/s11785-025-01874-5},
+  arxiv     = {2406.18613},
+  abbr      = {CAOT},
+  selected  = {true},
+  cvsection = {peer-reviewed},
+  bibtex_show = {true}
+}
+
+@article{yachmenev2025taylor,
+  title     = {Taylor-mode automatic differentiation for constructing molecular rovibrational Hamiltonian operators},
+  author    = {Yachmenev, Andrey and Vogt, Emil and Corral, {\'A}lvaro Fern{\'a}ndez and Saleh, Yahya},
+  journal   = {The Journal of Chemical Physics},
+  volume    = {163},
+  number    = {7},
+  pages     = {072501},
+  year      = {2025},
+  doi       = {10.1063/5.0287347},
+  arxiv     = {2506.20129},
+  code      = {https://github.com/robochimps/vibrojet},
+  abbr      = {JCP},
+  cvsection = {peer-reviewed},
+  bibtex_show = {true}
+}
+
+@article{vogt2025transferability,
+  title     = {Transferability and interpretability of vibrational normalizing-flow coordinates},
+  author    = {Vogt, Emil and Corral, {\'A}lvaro Fern{\'a}ndez and Saleh, Yahya and Yachmenev, Andrey},
+  journal   = {The Journal of Chemical Physics},
+  volume    = {163},
+  number    = {15},
+  pages     = {154106},
+  year      = {2025},
+  doi       = {10.1063/5.0285954},
+  abbr      = {JCP},
+  cvsection = {peer-reviewed},
+  bibtex_show = {true}
+}
+
+@article{saleh2025excited,
+  title     = {Computing Excited States of Molecules Using Normalizing Flows},
+  author    = {Saleh, Yahya and Corral, {\'A}lvaro Fern{\'a}ndez and Vogt, Emil and Iske, Armin and K{\"u}pper, Jochen and Yachmenev, Andrey},
+  journal   = {Journal of Chemical Theory and Computation},
+  volume    = {21},
+  number    = {10},
+  pages     = {5221--5229},
+  year      = {2025},
+  doi       = {10.1021/acs.jctc.5c00590},
+  arxiv     = {2308.16468},
+  abbr      = {JCTC},
+  selected  = {true},
+  cvsection = {peer-reviewed},
+  bibtex_show = {true}
+}
+
+@inproceedings{menden2025bounds,
+  title     = {Bounds on the Generalization Error in Active Learning},
+  author    = {Menden, V. and Saleh, Yahya and Iske, Armin},
+  booktitle = {Proceedings of the 6th Northern Lights Deep Learning Conference (NLDL)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {265},
+  pages     = {168--175},
+  year      = {2025},
+  html      = {https://proceedings.mlr.press/v265/menden25a.html},
+  arxiv     = {2409.09078},
+  abbr      = {NLDL},
+  selected  = {true},
+  cvsection = {peer-reviewed},
+  bibtex_show = {true}
+}
+
+@inproceedings{wenzel2024kernels,
+  title     = {Two-Layered and Deep Kernels as Data-Adapted Kernels},
+  author    = {Wenzel, Tizian and Saleh, Yahya and Iske, Armin},
+  booktitle = {DEEPK 2024: International Workshop on Deep Learning and Kernel Machines},
+  address   = {Leuven, Belgium},
+  year      = {2024},
+  pdf       = {https://www.esat.kuleuven.be/stadius/E/DEEPK2024/7_two_layered_and_deep_kernels_a.pdf},
+  abbr      = {DEEPK},
+  cvsection = {peer-reviewed},
+  bibtex_show = {true}
+}
+
+@article{saleh2023augmenting,
+  title     = {Augmenting Basis Sets by Normalizing Flows},
+  author    = {Saleh, Yahya and Iske, Armin and Yachmenev, Andrey and K{\"u}pper, Jochen},
+  journal   = {Proceedings in Applied Mathematics and Mechanics},
+  volume    = {23},
+  number    = {1},
+  pages     = {e202200239},
+  year      = {2023},
+  doi       = {10.1002/pamm.202200239},
+  abbr      = {PAMM},
+  cvsection = {peer-reviewed},
+  bibtex_show = {true}
+}
+
+@phdthesis{saleh2023thesis,
+  title     = {Spectral and Active Learning for Enhanced and Computationally Scalable Quantum Molecular Dynamics},
+  author    = {Saleh, Yahya},
+  school    = {Universit{\"a}t Hamburg},
+  year      = {2023},
+  html      = {https://ediss.sub.uni-hamburg.de/handle/ediss/10390},
+  abbr      = {PhD},
+  cvsection = {thesis},
+  bibtex_show = {true}
+}
+
+@article{saleh2021active,
+  title     = {Active learning of potential-energy surfaces of weakly bound complexes with regression-tree ensembles},
+  author    = {Saleh, Yahya and Sanjay, V. and Iske, Armin and Yachmenev, Andrey and K{\"u}pper, Jochen},
+  journal   = {The Journal of Chemical Physics},
+  volume    = {155},
+  number    = {14},
+  pages     = {144109},
+  year      = {2021},
+  doi       = {10.1063/5.0057051},
+  code      = {https://github.com/CFEL-CMI/Active-Learning-of-PES},
+  abbr      = {JCP},
+  selected  = {true},
+  cvsection = {peer-reviewed},
+  bibtex_show = {true}
+}
+
+@misc{saleh2026hermite,
+  title     = {Convergence theory for Hermite approximations under adaptive coordinate transformations},
+  author    = {Saleh, Yahya},
+  year      = {2026},
+  eprint    = {2604.16975},
+  archiveprefix = {arXiv},
+  primaryclass  = {math.NA},
+  arxiv     = {2604.16975},
+  abbr      = {arXiv},
+  selected  = {true},
+  cvsection = {preprint},
+  bibtex_show = {true}
+}
+
+@misc{corral2025polynomial,
+  title     = {Enhancing polynomial approximation of continuous functions by composition with homeomorphisms},
+  author    = {Corral, {\'A}lvaro Fern{\'a}ndez and Saleh, Yahya},
+  year      = {2025},
+  eprint    = {2512.13740},
+  archiveprefix = {arXiv},
+  primaryclass  = {math.NA},
+  arxiv     = {2512.13740},
+  abbr      = {arXiv},
+  cvsection = {preprint},
+  bibtex_show = {true}
+}

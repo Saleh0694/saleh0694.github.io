@@ -1,0 +1,5 @@
+# Optional: link co-author names on the publications page.
+# Key = last name in lower case. Example:
+# "iske":
+#   - firstname: ["Armin", "A."]
+#     url: https://www.math.uni-hamburg.de/home/iske/
