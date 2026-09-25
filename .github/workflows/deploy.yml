@@ -56,6 +56,8 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Tell GitHub Pages not to re-run Jekyll on the built site
+        run: touch _site/.nojekyll
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
